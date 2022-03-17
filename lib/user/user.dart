@@ -37,6 +37,8 @@ class AppUser {
   Future signOutWithGoogle() async {
     await GoogleSignInProvider().logOutUser();
     _userID = null;
+
+    gfgfgf
   }
 
   /// Filling information about person:
