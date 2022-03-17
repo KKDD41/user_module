@@ -31,7 +31,7 @@ class _SignInPageState extends State<SignInPage> {
                 onPressed: () async {
                   await appUser.signInWithGoogle();
 
-                  if (appUser.getID() != null) {
+                  if (appUser.getID() != '') {
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
                         builder: (context) => ActivatedApp(
