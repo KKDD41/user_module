@@ -4,8 +4,8 @@ import 'package:user2/user/cycle_notifier.dart';
 
 class UserInformation {
   String userName;
-  String weight;
-  String hightM;
+  int weight;
+  int hightM;
   CycleNotifier cycleNotifier;
   bool _isEmpty = true;
 
@@ -16,10 +16,12 @@ class UserInformation {
     required this.hightM,
     required this.cycleNotifier,
   }) {
+    print('Simple constructor works correctly');
     _isEmpty = false;
   }
   /// Construct an information after query from DB.
   factory UserInformation.fromMap(Map<dynamic, dynamic> map) {
+    print('fromMap begins');
     final userInfo = UserInformation(
         userName: map['userName'],
         weight: map['weight'],
@@ -27,10 +29,11 @@ class UserInformation {
         cycleNotifier: CycleNotifier(
           cycleDay: map['cycleNotifier']['cycleDay'],
           cycleLength: map['cycleNotifier']['cycleLength'],
-          currentDate : map['cycleNotifier']['currentDate'],
+          currentDate : CycleNotifier.fromString(map['cycleNotifier']['currentDate']),
         )
     );
     userInfo._isEmpty = false;
+    print('userInfo from map works correctly');
     return userInfo;
   }
   bool isEmpty() {
@@ -43,12 +46,12 @@ class UserInformation {
     await DatabaseProvider.setInfo(userID, {'userName': myName});
   }
 
-  Future setWeight(String myWeight, String userID) async {
+  Future setWeight(int myWeight, String userID) async {
     weight = myWeight;
     await DatabaseProvider.setInfo(userID, {'weight': myWeight});
   }
 
-  Future setHight(String myHight, String userID) async {
+  Future setHight(int myHight, String userID) async {
     hightM = myHight;
     await DatabaseProvider.setInfo(userID, {'hightM': myHight});
   }
@@ -79,8 +82,9 @@ class UserInformation {
               cycleNotifier : \n 
                   - 'cycleDay' : ${cycleNotifier.cycleDay}, \n 
                   - 'cycleLength' : ${cycleNotifier.cycleLength}, \n 
-                  - 'currentDate' : ${DateFormat('yMd').format(cycleNotifier
-        .currentDate)}
+                  - 'currentDate' : ${DateFormat('yyyy-MM-dd')
+                                      .format(cycleNotifier
+                                      .currentDate)}
               ''';
   }
 }

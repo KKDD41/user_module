@@ -23,19 +23,22 @@ class AppUser {
     } else {
       userInformation = await DatabaseProvider.accessProfile(userID!);
       if (userInformation == null) {
+        print('UserInfo is null, so we will create it from map');
         userInformation = UserInformation.fromMap({
-          'weight': '',
-          'hightM': '',
+          'weight': 0,
+          'hightM': 0,
           'userName': '',
           'cycleNotifier': {
-            'cycleDay': '',
-            'cycleLength': '',
-            'currentDate': DateFormat('yMn').format(DateTime.now()),
+            'cycleDay': 0,
+            'cycleLength': 0,
+            'currentDate': DateFormat('yyyy-MM-dd').format(DateTime.now()),
           },
         });
+        print(userInformation.toString());
       } else {
         userInformation!.cycleNotifier.updateDay(userID!);
       }
+      print('authorization passes without errors');
     }
   }
 

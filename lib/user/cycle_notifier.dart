@@ -11,14 +11,14 @@ class CycleNotifier {
   CycleNotifier(
       {required this.cycleLength,
       required this.cycleDay,
-      DateTime? currentDate});
+      DateTime? currentDate}
+  );
 
   /// Updates current 'cycleDay' and 'currentDate' for 'userID'.
   Future updateDay(String userID) async {
     String lastDateStr = await DatabaseProvider.accessSingleValue(
         userID, 'cycleNotifier', 'currentDate');
-    DateTime lastDate = DateTime(lastDateStr.substring(6, 10) as int,
-        lastDateStr.substring(3, 5) as int, lastDateStr.substring(0, 2) as int);
+    DateTime lastDate = fromString(lastDateStr);
 
     if (lastDate == currentDate) {
       return;
@@ -28,10 +28,18 @@ class CycleNotifier {
           (differenceInDays - (cycleLength - cycleDay)) % cycleLength;
       await DatabaseProvider.setInfo(userID, {
         'cycleNotifier': {
-          'currentDate': DateFormat('yMd').format(currentDate),
-          'cycleDay': currentCycleDay.toString()
+          'currentDate': DateFormat('yyyy-MM-dd').format(currentDate),
+          'cycleDay': currentCycleDay,
         }
       });
     }
+  }
+
+  static DateTime fromString(String currentDateStr) {
+    print('fromString begins');
+    print(currentDateStr);
+    DateTime time = DateTime.parse(currentDateStr);
+    print('fromString ends successfully');
+    return time;
   }
 }

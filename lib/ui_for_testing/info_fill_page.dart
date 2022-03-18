@@ -36,24 +36,39 @@ class InfoFillPageState extends State<InfoFillPage> {
                 controller: _TextEditingController(text: 'Edit name:'),
                 onChanged: (userName) async {
                   await appUser.updateInfo({'userName': userName});
+                  print('userName passes');
                 },
               ),
               TextField(
                 controller: _TextEditingController(text: 'Edit weight:'),
                 onChanged: (weight) async {
-                  await appUser.updateInfo({'weight': weight});
+                  await appUser.updateInfo({'weight': int.parse(weight)});
+                  print('weight passes');
                 },
               ),
               TextField(
                 controller: _TextEditingController(text: 'Edit hightM:'),
                 onChanged: (hightM) async {
-                  await appUser.updateInfo({'hightM': hightM});
+                  await appUser.updateInfo({'hightM': int.parse(hightM)});
+                  print('height passes');
                 },
               ),
               TextField(
                 controller: _TextEditingController(text: 'Edit cycleDay:'),
                 onChanged: (cycleDay) async {
-                  await appUser.updateInfo({'cycleDay': cycleDay});
+                  await appUser.updateInfo({'cycleNotifier' :
+                  {'cycleDay': int.parse(cycleDay)}
+                  });
+                  print('cycleDay passes');
+                },
+              ),
+              TextField(
+                controller: _TextEditingController(text: 'Edit cycleLength:'),
+                onChanged: (cycleLength) async {
+                  await appUser.updateInfo({'cycleNotifier' :
+                  {'cycleLength': int.parse(cycleLength)}
+                  });
+                  print('cycleLength passes');
                 },
               ),
               ElevatedButton(
