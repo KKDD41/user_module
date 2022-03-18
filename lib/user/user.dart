@@ -28,7 +28,12 @@ class AppUser {
     } else {
       // TODO: do not want to initialize existing data!!!
       _userInformation = await DatabaseProvider().accessProfile(_userID!);
-      print(_userInformation.toString());
+      _userInformation ??= UserInformation.fromMap({
+          'weight' : '',
+          'hightM' : '',
+          'cycleDay' : '',
+          'userName' : '',
+        });
     }
   }
 
@@ -40,7 +45,29 @@ class AppUser {
   /// Filling information after first authorization separately.
   Future updateInfo(Map<String, dynamic> infoLine) async {
     await DatabaseProvider().setInfo(_userID!, infoLine);
-    // TODO: change '_userInformation' locally.
+    infoLine.forEach((key, value) {
+      switch (key) {
+        case 'userName' : {
+          _userInformation!.setName(value, _userID!);
+          break;
+        }
+        case 'weight' : {
+          _userInformation!.setWeight(value, _userID!);
+          break;
+        }
+        case 'hightM' : {
+          _userInformation!.setHight(value, _userID!);
+          break;
+        }
+        case 'cycleDay' : {
+          _userInformation!.setCycleDay(value, _userID!);
+          break;
+        }
+        default : {
+          break;
+        }
+      }
+    });
   }
 
 }

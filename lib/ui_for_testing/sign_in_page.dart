@@ -32,7 +32,7 @@ class _SignInPageState extends State<SignInPage> {
               ElevatedButton(
                 onPressed: () async {
                   await appUser.signInWithGoogle();
-                  if (appUser.getInfo() != null) {
+                  if (appUser.getInfo()!.userName != '') {
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
                         builder: (context) => ActivatedApp(

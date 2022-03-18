@@ -53,7 +53,7 @@ class InfoFillPageState extends State<InfoFillPage> {
               TextField(
                 controller: _TextEditingController(text: 'Edit cycleDay:'),
                 onChanged: (cycleDay) async {
-                  await appUser.updateInfo({'userName': cycleDay});
+                  await appUser.updateInfo({'cycleDay': cycleDay});
                 },
               ),
               ElevatedButton(

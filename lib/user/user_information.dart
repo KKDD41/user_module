@@ -2,9 +2,9 @@ import 'package:user2/providers/user_database_provider.dart';
 
 class UserInformation {
   String userName;
-  int weight;
-  int hightM;
-  int cycleDay;
+  String weight;
+  String hightM;
+  String cycleDay;
   bool _isEmpty = true;
 
   /// Constructing user's information for the start of using app.
@@ -40,17 +40,17 @@ class UserInformation {
     await DatabaseProvider().setInfo(userID, {'userName': myName});
   }
 
-  Future setWeight(int myWeight, String userID) async {
+  Future setWeight(String myWeight, String userID) async {
     weight = myWeight;
     await DatabaseProvider().setInfo(userID, {'weight': myWeight});
   }
 
-  Future setHight(int myHight, String userID) async {
+  Future setHight(String myHight, String userID) async {
     hightM = myHight;
     await DatabaseProvider().setInfo(userID, {'hightM': myHight});
   }
 
-  Future setCycleDay(int myDay, String userID) async {
+  Future setCycleDay(String myDay, String userID) async {
     cycleDay = myDay;
     await DatabaseProvider().setInfo(userID, {'cycleDay': myDay});
   }
