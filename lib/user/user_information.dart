@@ -2,8 +2,8 @@ import 'package:user2/providers/user_database_provider.dart';
 
 class UserInformation {
   String userName;
-  double weight;
-  double hightM;
+  int weight;
+  int hightM;
   int cycleDay;
   bool _isEmpty = true;
 
@@ -25,9 +25,7 @@ class UserInformation {
       hightM: map['hightM'],
       cycleDay: map['cycleDay'],
     );
-    if (userInfo.userName != '') {
-      userInfo._isEmpty = false;
-    }
+    userInfo._isEmpty = false;
     return userInfo;
   }
 
@@ -35,33 +33,30 @@ class UserInformation {
     return _isEmpty;
   }
 
-  /// Setting methods for each field which add it to DB.
-  void setInfo(
-      String userID, String name, double weight, double height, int day) {
-    _setName(name);
-    _setHight(height);
-    _setWeight(weight);
-    _setCycleDay(day);
-    DatabaseProvider(userID).setInfo(
-        userID, {'name': name, 'height': height, 'weight': weight, 'day': day});
-  }
-
-  void _setName(String myName) {
+  /// Updating information separately.
+  /// Works correct only if directory 'user/userID' exists.
+  Future setName(String myName, String userID) async {
     userName = myName;
+    await DatabaseProvider().setInfo(userID, {'userName': myName});
   }
 
-  void _setWeight(double myWeight) {
+  Future setWeight(int myWeight, String userID) async {
     weight = myWeight;
+    await DatabaseProvider().setInfo(userID, {'weight': myWeight});
   }
 
-  void _setHight(double myHight) {
+  Future setHight(int myHight, String userID) async {
     hightM = myHight;
+    await DatabaseProvider().setInfo(userID, {'hightM': myHight});
   }
 
-  void _setCycleDay(int myDay) {
+  Future setCycleDay(int myDay, String userID) async {
     cycleDay = myDay;
+    await DatabaseProvider().setInfo(userID, {'cycleDay': myDay});
   }
 
-  /// Must work with widget, where user chooses today's type of activity.
-  void chooseWorkoutTheme(String theme) {}
+  @override
+  String toString() {
+    return 'weight : $weight, \n userName : $userName, \n hightM : $hightM, \n cycleDay : $cycleDay';
+  }
 }

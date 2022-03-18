@@ -19,6 +19,6 @@ class _ActivatedAppState extends State<ActivatedApp> {
 
   @override
   Widget build(BuildContext context) {
-    return Text('HAHAHAHA' + appUser.getID()!);
+    return Text('HAHAHAHA' + appUser.getInfo().toString());
   }
 }

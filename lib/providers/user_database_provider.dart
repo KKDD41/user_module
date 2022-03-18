@@ -5,42 +5,30 @@ import 'package:flutter/cupertino.dart';
 
 import '../user/user_information.dart';
 
-
 class DatabaseProvider extends ChangeNotifier {
   static final _database = FirebaseDatabase(
-      databaseURL:
-      "https://user-2-5b71e-default-rtdb.europe-west1.firebasedatabase.app")
+          databaseURL:
+              "https://user-2-5b71e-default-rtdb.europe-west1.firebasedatabase.app")
       .ref()
       .child('users/');
-  UserInformation? _userInformation;
-  static const USERS_ACCOUNTS = 'users/';
 
-  late StreamSubscription<DatabaseEvent> _userAccStream;
-
-  DatabaseProvider(String id) {
-    _listenToAccounts(id);
-  }
-
-  /// Function to access user's information:
-  UserInformation? accessProfile() {
-    return _userInformation;
-  }
-
-  void setInfo(String userID, Map<String, dynamic> info) {
-    _database.child(userID).update(info);
-  }
-
-  void _listenToAccounts(String id) {
-    _userAccStream = _database.child(USERS_ACCOUNTS).child(id).onValue.listen((event) {
-      _userInformation = UserInformation.fromMap(event.snapshot.value as Map);
-      notifyListeners();
+  /// Function to access user's information.
+  /// If directory 'user/userID' does not exist, returns null without
+  /// creating a '/userID' directory.
+  Future<UserInformation?> accessProfile(String userID) async {
+    UserInformation? userInformation;
+    await _database.child(userID).get().then((snapshot) {
+      if (snapshot.value != null) {
+        userInformation =
+            UserInformation.fromMap(snapshot.value! as Map);
+      }
     });
+    return userInformation;
   }
 
-  @override
-  void dispose() {
-    _userAccStream.cancel();
-    super.dispose();
+  /// Works correctly if in DB exists filled directory 'user/userID'.
+  Future setInfo(String userID, Map<String, dynamic> info) async {
+    await _database.child(userID).update(info);
   }
 
 }

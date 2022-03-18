@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:user2/ui_for_testing/activated_app.dart';
 import 'package:user2/user/user.dart';
 
+import 'info_fill_page.dart';
+
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
 
@@ -30,11 +32,22 @@ class _SignInPageState extends State<SignInPage> {
               ElevatedButton(
                 onPressed: () async {
                   await appUser.signInWithGoogle();
-
-                  if (appUser.getID() != '') {
+                  if (appUser.getInfo() != null) {
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
                         builder: (context) => ActivatedApp(
+                          appUser: appUser,
+                        ),
+                      ),
+                    );
+                  } else {
+                    // Showing 'InfoFillPage' state which user must fill after
+                    // first authorization.
+                    // Also this page should be used to update information during
+                    // current session.
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => InfoFillPage(
                           appUser: appUser,
                         ),
                       ),
