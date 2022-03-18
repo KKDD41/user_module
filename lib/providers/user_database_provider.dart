@@ -15,20 +15,43 @@ class DatabaseProvider extends ChangeNotifier {
   /// Function to access user's information.
   /// If directory 'user/userID' does not exist, returns null without
   /// creating a '/userID' directory.
-  Future<UserInformation?> accessProfile(String userID) async {
+  static Future<UserInformation?> accessProfile(String userID) async {
     UserInformation? userInformation;
     await _database.child(userID).get().then((snapshot) {
       if (snapshot.value != null) {
-        userInformation =
-            UserInformation.fromMap(snapshot.value! as Map);
+        userInformation = UserInformation.fromMap(snapshot.value! as Map);
       }
     });
     return userInformation;
   }
 
-  /// Works correctly if in DB exists filled directory 'user/userID'.
-  Future setInfo(String userID, Map<String, dynamic> info) async {
-    await _database.child(userID).update(info);
+  /// Provides access to needed parameter of 'userID'.
+  static Future<String> accessSingleValue(String userID, String neededDirectory,
+      String? childOfNeededDirectory) async {
+    String data = '';
+    if (childOfNeededDirectory == null) {
+      await _database
+          .child(userID)
+          .child(neededDirectory)
+          .get()
+          .then((snapshot) {
+        data = snapshot.value!.toString();
+      });
+    } else {
+      await _database
+          .child(userID)
+          .child(neededDirectory)
+          .child(childOfNeededDirectory)
+          .get()
+          .then((snapshot) {
+        data = snapshot.value!.toString();
+      });
+    }
+    return data;
   }
 
+  /// Method for updating data in 'user/userID' directory.
+  static Future setInfo(String userID, Map<String, dynamic> info) async {
+    await _database.child(userID).update(info);
+  }
 }

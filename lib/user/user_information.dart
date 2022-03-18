@@ -1,10 +1,12 @@
+import 'package:intl/intl.dart';
 import 'package:user2/providers/user_database_provider.dart';
+import 'package:user2/user/cycle_notifier.dart';
 
 class UserInformation {
   String userName;
-  int weight;
-  int hightM;
-  int cycleDay;
+  String weight;
+  String hightM;
+  CycleNotifier cycleNotifier;
   bool _isEmpty = true;
 
   /// Constructing user's information for the start of using app.
@@ -12,7 +14,7 @@ class UserInformation {
     required this.userName,
     required this.weight,
     required this.hightM,
-    required this.cycleDay,
+    required this.cycleNotifier,
   }) {
     _isEmpty = false;
   }
@@ -23,7 +25,11 @@ class UserInformation {
       userName: map['userName'],
       weight: map['weight'],
       hightM: map['hightM'],
-      cycleDay: map['cycleDay'],
+      cycleNotifier: CycleNotifier(
+          cycleDay: map['cycleNotifier']['cycleDay'],
+          cycleLength: map['cycleNotifier']['cycleLength'],
+          currentDate : map['cycleNotifier']['currentDate'],
+      )
     );
     userInfo._isEmpty = false;
     return userInfo;
@@ -34,29 +40,49 @@ class UserInformation {
   }
 
   /// Updating information separately.
-  /// Works correct only if directory 'user/userID' exists.
   Future setName(String myName, String userID) async {
     userName = myName;
-    await DatabaseProvider().setInfo(userID, {'userName': myName});
+    await DatabaseProvider.setInfo(userID, {'userName': myName});
   }
 
-  Future setWeight(int myWeight, String userID) async {
+  Future setWeight(String myWeight, String userID) async {
     weight = myWeight;
-    await DatabaseProvider().setInfo(userID, {'weight': myWeight});
+    await DatabaseProvider.setInfo(userID, {'weight': myWeight});
   }
 
-  Future setHight(int myHight, String userID) async {
+  Future setHight(String myHight, String userID) async {
     hightM = myHight;
-    await DatabaseProvider().setInfo(userID, {'hightM': myHight});
+    await DatabaseProvider.setInfo(userID, {'hightM': myHight});
   }
 
-  Future setCycleDay(int myDay, String userID) async {
-    cycleDay = myDay;
-    await DatabaseProvider().setInfo(userID, {'cycleDay': myDay});
+  Future setCycleDay(int myCycleDay, String userID) async {
+    cycleNotifier.cycleDay = myCycleDay;
+    await DatabaseProvider.setInfo(userID, {
+      'cycleNotifier': {
+        'cycleDay': cycleNotifier.cycleDay.toString(),
+      }
+    });
+  }
+
+  Future setCycleLength(int myCycleLength, String userID) async {
+    cycleNotifier.cycleLength = myCycleLength;
+    await DatabaseProvider.setInfo(userID, {
+      'cycleNotifier': {
+        'cycleLength': cycleNotifier.cycleLength.toString(),
+      }
+    });
   }
 
   @override
   String toString() {
-    return 'weight : $weight, \n userName : $userName, \n hightM : $hightM, \n cycleDay : $cycleDay';
+    return '''weight : $weight, \n 
+              userName : $userName, \n 
+              hightM : $hightM, \n 
+              cycleNotifier : \n 
+                  - 'cycleDay' : ${cycleNotifier.cycleDay}, \n 
+                  - 'cycleLength' : ${cycleNotifier.cycleLength}, \n 
+                  - 'currentDate' : ${DateFormat('yMd').format(cycleNotifier
+                                                                .currentDate)}
+              ''';
   }
 }

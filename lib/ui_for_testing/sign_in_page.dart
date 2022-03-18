@@ -32,7 +32,8 @@ class _SignInPageState extends State<SignInPage> {
               ElevatedButton(
                 onPressed: () async {
                   await appUser.signInWithGoogle();
-                  if (appUser.getInfo() != null) {
+                  // TODO: add more constructive checkup!
+                  if (appUser.userInformation!.userName != '') {
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
                         builder: (context) => ActivatedApp(
@@ -55,13 +56,13 @@ class _SignInPageState extends State<SignInPage> {
                   }
 
                 },
-                child: const Text('Sign in with Google'),
+                child: const Text('Get started!'),
               ),
               ElevatedButton(
                 onPressed: () async {
                   await appUser.signOutWithGoogle();
                 },
-                child: const Text('Sign out with Google'),
+                child: const Text('Sign out'),
               ),
             ],
           ),

@@ -11,9 +11,9 @@ class WorkoutTheme {
     theme = newTheme;
   }
 
-/// Query to DB that returns a list of available single workouts
-/// for current theme.
-//List<SingleWorkout> getListOfWorkouts() {}
+  /// Query to DB that returns a list of available single workouts
+  /// for current theme.
+
 
 
 }
