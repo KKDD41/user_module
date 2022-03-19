@@ -60,7 +60,7 @@ class UserInformation {
     cycleNotifier.cycleDay = myCycleDay;
     await DatabaseProvider.setInfo(userID, {
       'cycleNotifier': {
-        'cycleDay': cycleNotifier.cycleDay.toString(),
+        'cycleDay': cycleNotifier.cycleDay,
       }
     });
   }
@@ -69,7 +69,7 @@ class UserInformation {
     cycleNotifier.cycleLength = myCycleLength;
     await DatabaseProvider.setInfo(userID, {
       'cycleNotifier': {
-        'cycleLength': cycleNotifier.cycleLength.toString(),
+        'cycleLength': cycleNotifier.cycleLength,
       }
     });
   }

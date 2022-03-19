@@ -52,6 +52,13 @@ class DatabaseProvider extends ChangeNotifier {
 
   /// Method for updating data in 'user/userID' directory.
   static Future setInfo(String userID, Map<String, dynamic> info) async {
-    await _database.child(userID).update(info);
+    if (info.containsKey('cycleNotifier')) {
+      await _database
+          .child(userID)
+          .child('cycleNotifier')
+          .update(info['cycleNotifier']);
+    } else {
+      await _database.child(userID).update(info);
+    }
   }
 }

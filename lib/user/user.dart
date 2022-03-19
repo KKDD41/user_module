@@ -23,7 +23,6 @@ class AppUser {
     } else {
       userInformation = await DatabaseProvider.accessProfile(userID!);
       if (userInformation == null) {
-        print('UserInfo is null, so we will create it from map');
         userInformation = UserInformation.fromMap({
           'weight': 0,
           'hightM': 0,
@@ -34,11 +33,19 @@ class AppUser {
             'currentDate': DateFormat('yyyy-MM-dd').format(DateTime.now()),
           },
         });
-        print(userInformation.toString());
+        await DatabaseProvider.setInfo(userID!, {
+          'weight': 0,
+          'hightM': 0,
+          'userName': '',
+          'cycleNotifier': {
+            'cycleDay': 0,
+            'cycleLength': 0,
+            'currentDate': DateFormat('yyyy-MM-dd').format(DateTime.now()),
+          },
+        });
       } else {
         userInformation!.cycleNotifier.updateDay(userID!);
       }
-      print('authorization passes without errors');
     }
   }
 
@@ -69,9 +76,10 @@ class AppUser {
           }
         case 'cycleNotifier':
           {
-            if ((value as Map).containsKey('cycleLength')) {
+            print(key + ' ' + value.toString());
+            if (value.containsKey('cycleLength')) {
               userInformation!.setCycleLength(value['cycleLength'], userID!);
-            } else {
+            } else if (value.containsKey('cycleDay')) {
               userInformation!.setCycleDay(value['cycleDay'], userID!);
             }
             break;

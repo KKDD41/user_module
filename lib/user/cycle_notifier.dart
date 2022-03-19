@@ -30,16 +30,14 @@ class CycleNotifier {
         'cycleNotifier': {
           'currentDate': DateFormat('yyyy-MM-dd').format(currentDate),
           'cycleDay': currentCycleDay,
+          'cycleLength' : cycleLength,
         }
       });
+      cycleDay = currentCycleDay;
     }
   }
 
   static DateTime fromString(String currentDateStr) {
-    print('fromString begins');
-    print(currentDateStr);
-    DateTime time = DateTime.parse(currentDateStr);
-    print('fromString ends successfully');
-    return time;
+    return DateTime.parse(currentDateStr);
   }
 }
