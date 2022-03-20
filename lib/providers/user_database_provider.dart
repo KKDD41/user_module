@@ -25,7 +25,8 @@ class DatabaseProvider extends ChangeNotifier {
     return userInformation;
   }
 
-  /// Provides access to needed parameter of 'userID'.
+  /// Provides access to needed parameter of 'userID', that can be as
+  /// deed as you want.
   static Future<String> accessSingleValue(String userID, String neededDirectory,
       String? childOfNeededDirectory) async {
     String data = '';

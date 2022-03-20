@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:user2/providers/google_sign_in_provider.dart';
 import 'package:user2/providers/user_database_provider.dart';
+import 'package:user2/user/custom_error.dart';
 import 'package:user2/user/user_information.dart';
 
 class AppUser {
@@ -76,17 +77,18 @@ class AppUser {
           }
         case 'cycleNotifier':
           {
-            print(key + ' ' + value.toString());
             if (value.containsKey('cycleLength')) {
               userInformation!.setCycleLength(value['cycleLength'], userID!);
             } else if (value.containsKey('cycleDay')) {
               userInformation!.setCycleDay(value['cycleDay'], userID!);
+            } else {
+              CustomErrorMessage('Incorrect data to update!');
             }
             break;
           }
         default:
           {
-            break;
+            CustomErrorMessage('Incorrect data to update!');
           }
       }
     });

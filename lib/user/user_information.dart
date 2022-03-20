@@ -1,5 +1,6 @@
 import 'package:intl/intl.dart';
 import 'package:user2/providers/user_database_provider.dart';
+import 'package:user2/user/custom_error.dart';
 import 'package:user2/user/cycle_notifier.dart';
 
 class UserInformation {
@@ -7,7 +8,6 @@ class UserInformation {
   int weight;
   int hightM;
   CycleNotifier cycleNotifier;
-  bool _isEmpty = true;
 
   /// Constructing user's information for the start of using app.
   UserInformation({
@@ -15,13 +15,10 @@ class UserInformation {
     required this.weight,
     required this.hightM,
     required this.cycleNotifier,
-  }) {
-    print('Simple constructor works correctly');
-    _isEmpty = false;
-  }
+  });
+
   /// Construct an information after query from DB.
   factory UserInformation.fromMap(Map<dynamic, dynamic> map) {
-    print('fromMap begins');
     final userInfo = UserInformation(
         userName: map['userName'],
         weight: map['weight'],
@@ -29,29 +26,35 @@ class UserInformation {
         cycleNotifier: CycleNotifier(
           cycleDay: map['cycleNotifier']['cycleDay'],
           cycleLength: map['cycleNotifier']['cycleLength'],
-          currentDate : CycleNotifier.fromString(map['cycleNotifier']['currentDate']),
+          currentDate:
+              CycleNotifier.fromString(map['cycleNotifier']['currentDate']),
         )
     );
-    userInfo._isEmpty = false;
-    print('userInfo from map works correctly');
     return userInfo;
-  }
-  bool isEmpty() {
-    return _isEmpty;
   }
 
   /// Updating information separately.
   Future setName(String myName, String userID) async {
+    if (myName == '' || myName.length > 25) {
+      CustomErrorMessage('''Please enter your nickname! \n
+                            (less than 25 characters allowed)''');
+    }
     userName = myName;
     await DatabaseProvider.setInfo(userID, {'userName': myName});
   }
 
   Future setWeight(int myWeight, String userID) async {
+    if (myWeight < 30 || myWeight > 400) {
+      CustomErrorMessage('Please set your weight in kilograms!');
+    }
     weight = myWeight;
     await DatabaseProvider.setInfo(userID, {'weight': myWeight});
   }
 
   Future setHight(int myHight, String userID) async {
+    if (myHight < 130 || myHight > 400) {
+      CustomErrorMessage('Please set your hight in centimeters!');
+    }
     hightM = myHight;
     await DatabaseProvider.setInfo(userID, {'hightM': myHight});
   }
@@ -83,8 +86,7 @@ class UserInformation {
                   - 'cycleDay' : ${cycleNotifier.cycleDay}, \n 
                   - 'cycleLength' : ${cycleNotifier.cycleLength}, \n 
                   - 'currentDate' : ${DateFormat('yyyy-MM-dd')
-                                      .format(cycleNotifier
-                                      .currentDate)}
+                                      .format(cycleNotifier.currentDate)}
               ''';
   }
 }
