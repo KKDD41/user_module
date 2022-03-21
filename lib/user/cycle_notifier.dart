@@ -5,6 +5,7 @@ class CycleNotifier {
   late int cycleLength;
   late int cycleDay;
 
+
   /// Stores data like 'YEAR-NUM_MONTH-DAY'.
   DateTime currentDate = DateTime.now();
 
@@ -40,4 +41,25 @@ class CycleNotifier {
   static DateTime fromString(String currentDateStr) {
     return DateTime.parse(currentDateStr);
   }
+
+  /// Can count current cycle phase.
+  /// Can be modified for each user.
+  CyclePhase returnCyclePhase() {
+    if (cycleDay <= 6) {
+      return CyclePhase.MENSTRUATION;
+    } else if (cycleDay > 6 && cycleDay <= 12) {
+      return CyclePhase.FOLLICULAR_PHASE;
+    } else if (cycleDay > 12 && cycleDay < 17) {
+      return CyclePhase.FERTILE_WINDOW;
+    } else {
+      return CyclePhase.LUTERAL_PHASE;
+    }
+  }
+}
+
+enum CyclePhase {
+  MENSTRUATION,
+  FOLLICULAR_PHASE,
+  FERTILE_WINDOW,
+  LUTERAL_PHASE
 }
