@@ -117,7 +117,7 @@ class AppUser {
     }
 
     /// Returns a description of the current cycle phase.
-    // TODO: finish it
+    // TODO: fill it with beautiful text
     String returnDescription() {
       final cyclePhase = userInformation!.cycleNotifier.returnCyclePhase();
       switch (cyclePhase) {

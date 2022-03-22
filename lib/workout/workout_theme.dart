@@ -7,11 +7,6 @@ class WorkoutTheme {
   /// Constructor.
   WorkoutTheme({required this.theme});
 
-  /// Setter.
-  void setTheme(String newTheme) {
-    theme = newTheme;
-  }
-
   /// Query to DB that returns a list of available single workouts
   /// for current theme.
   Future<List<SingleWorkout>> returnListOfWorkouts() async {

@@ -7,7 +7,7 @@ class SingleWorkout {
   SingleWorkout({required this.pictureUrl, required this.nameOfWorkout});
   factory SingleWorkout.fromMap(Map<dynamic, dynamic> info) {
     return SingleWorkout(nameOfWorkout: info.keys.first,
-        pictureUrl: info[info.keys.first]);
+        pictureUrl: info['pictureUrl']);
   }
 
   Map<String, int> setActivity(String userID, String nameOfWorkout) {
