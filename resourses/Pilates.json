@@ -1,0 +1,34 @@
+{ "Pilates" :
+{
+  "Single leg stretch" : {
+    "pictureUrl" : "https://www.spotebi.com/wp-content/uploads/2018/04/single-leg-stretch-exercise-illustration-spotebi.jpg",
+    "Description" : "Lie on your back with both legs in tabletop.\nExhale to curl your head, neck, and shoulders off of the floor so you’re looking at your knees. Inhale to put your hands on the sides of your knees.\nExhale to stretch one leg out at a 45-degree angle or lower — only as low as you can while keeping your back and pelvis in the same position. Avoid arching your back, and watch for the abdominals doming. The hand on the side of the stretched leg will reach toward the opposite ankle.\nInhale to bend your knee back to the 90-degree position.\nRepeat with the opposite leg.",
+    "Complexity" : 1,
+    "Benefits" : "Muscles worked: abdominals, back, hip extensors."
+  },
+  "Side bend preparation" : {
+    "pictureUrl" : "https://image.shutterstock.com/image-vector/pilates-sequence-vector-illustration-side-260nw-1971522170.jpg",
+    "Description" : "While on your side, press up on your forearm and elbow with both knees bent. Your feet will be behind you, with your knees in line with your hips.\nExhale to push your forearm into the floor and lift your hips into the air.\nInhale to lower your hips halfway.\nExhale to lift your hips up again. Repeat 8–10 times.\nInhale to lower your hips with control. Repeat on the other side.",
+    "Complexity" : 2,
+    "Benefits" : "Muscles worked: obliques, shoulder girdle stabilizers."
+  },
+  "Crisscross" : {
+    "pictureUrl" : "https://i.pinimg.com/474x/19/b8/e9/19b8e9bd1dea37eb54aef70a7e1069cd.jpg",
+    "Description" : "Lie on your back with both legs in tabletop and your hands behind your head.\nExhale to lift your head, neck, and shoulders by sliding your ribs toward your belly button.\nInhale to hold the position.\nExhale to rotate your upper body to the opposite knee while the same leg straightens.\nInhale to return to the previous position.\nExhale to rotate to the opposite side.\nThis completes one set; repeat 8–10 times.",
+    "Complexity" : 3,
+    "Benefits" : "Muscles worked: abdominals (especially obliques), hip extensors."
+  },
+  "Rolling Like a Ball" : {
+    "pictureUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7nKL2SaqpY_Icu4NtPS5m5M1-6O3XXRe3FymTuumcGgtCfH4NfrK0qFHHyTKnre_ts0o&usqp=CAU",
+    "Description" : "Sit on the mat with knees drawn toward your chest and arms wrapped around your legs. Rock back to tailbone, with feet hovering a few inches above the mat.\n\nInhale, rolling back to your shoulder blades. Exhale to roll forward and return to the balanced starting position. Use abs to control momentum and pause before your feet touch the mat.",
+    "Complexity" : 4,
+    "Benefits" : "Rolling exercises stimulate the spine, deeply work the abdominals, and tune you into the inner flow of movement and breath in the body. You will learn to be in control of your movement and find your natural balance point. You will be giving yourself a back massage, which can relieve tension."
+  },
+  "Shoulder Bridge" : {
+    "pictureUrl" : "https://thumbs.dreamstime.com/b/woman-doing-marching-glute-bridge-exercise-flat-vector-illustration-isolated-white-background-222621405.jpg",
+    "Description" : "Begin lying on your back with your legs bent and hip-width apart. Arms should be by your side with palms down. \nExhale to lift your pelvis and hips, creating a diagonal line from knee to shoulder. \nExtend one leg straight out. \nBend your extended knee and then return to the starting position. Repeat the exercise, alternating sides.",
+    "Complexity" : 5,
+    "Benefits" : "The Shoulder Bridge is a Pilates class staple because it improves posture, works your abs and glutes and teaches you how to stabilize your shoulders."
+  }
+}
+}

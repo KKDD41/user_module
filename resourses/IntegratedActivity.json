@@ -1,0 +1,34 @@
+{ "IntegratedActivity" :
+{
+  "Step ups" : {
+    "pictureUrl" : "https://media.istockphoto.com/vectors/woman-doing-dumbbell-step-up-exercise-by-stepping-on-the-chair-and-vector-id1219004179?k=20&m=1219004179&s=612x612&w=0&h=5FbA9k6veC9XSN1gvLfNUCLoDX1MD-xexoUgBcc2FQo=",
+    "Description" : "Stand in front of a box or an elevated surface, pulling your shoulders back and keeping your abs tight. Set your left leg onto the box, then step to top of the box making sure your feet are flat. Step back down with the same leg, then repeat with your right leg.",
+    "Complexity" : 1,
+    "Benefits" : "Step ups are a fantastic exercise you can do with very little space that will strengthen your legs and core muscles, build endurance, and get your heart rate up all in one move.\n\nTo make step ups more challenging, add weight or step onto a higher surface."
+  },
+  "Dips" : {
+    "pictureUrl" : "https://media.istockphoto.com/vectors/woman-doing-triceps-dips-with-bench-in-2-step-for-exercise-guide-vector-id1201870467?k=20&m=1201870467&s=170667a&w=0&h=nNFyjuFelFH0oYGkRU61RRZNWTbVy7WS-N3Gn74XFQc=",
+    "Description" : "Stand in between a set of parallel bars. Grab the bars, straighten your arms, and hoist yourself up off the ground while slightly crossing your legs. While pulling your shoulders back and keeping your chest up, lower yourself down so that your elbows are parallel to the floor. Raise yourself back up to the starting position so that your arms are straight.",
+    "Complexity" : 2,
+    "Benefits" : "Ideal workout to your chest, triceps, shoulders and abs all at once? Start making dips your go-to exercise."
+  },
+  "Race walking" : {
+    "pictureUrl" : "https://www.verywellfit.com/thmb/ZUVSdo0UhG6H2NNuBHGVqtNa5Y8=/3353x2231/filters:no_upscale():max_bytes(150000):strip_icc()/racewalking-sequence-Dorling-Kindersley-Dorling-Kindersley-RF-GettyImages-97976181-56a9dcd43df78cf772ab209b.jpg",
+    "Description" : "The arms are bent at a 90° angle and make large movements backwards and forwards. This swinging movement stays close to the body and follows the walker's axis. Hands are relaxed.\n\nAs for the lower body, the knee is blocked when the foot hits the ground. Race walking requires one foot to be in constant contact with the ground. To do this, as one foot pushes off, the other foot hits the ground. The foot rolls from the heel to the toes, creating a dynamic movement which increases propulsion. ",
+    "Complexity" : 3,
+    "Benefits" : "Race walking utilises several muscle groups of the body, making it a great exercise to achieve overall fitness. As part of this exercise, you walk for maximum benefit. What’s more, it has improved fitness, promotes muscle toning, increases endurance, burns maximum calories, and enhances cardiovascular fitness levels. "
+  },
+  "Wall sit" : {
+    "pictureUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv6H6fbrtkns0yqSzp9l-MjyX1iPh7_g0uXhJYjKtLik1gWkj4Zt2kiq0tkn2v0QpxgZo&usqp=CAU",
+    "Description" : "Slowly slide your back down a wall until your thighs are parallel to the floor.\nMake sure your knees are directly above your ankles and keep your back straight.",
+    "Complexity" : 4,
+    "Benefits" : "Wall sits work muscles in your lower body. The wall sit exercise activates muscle groups throughout your lower body, including your quadriceps, glutes, hamstrings, and calves.\nWall sits can increase your muscular endurance. As you practice this exercise more, you will be able to hold yourself in a wall sit position for longer periods of time, increasing muscular endurance for other exercises like running and skiing.\nWall sits can enhance your stability. With proper form, wall sits use your abdominal muscles and lower back muscles as stabilizers."
+  },
+  "Contralateral limb raise" : {
+    "pictureUrl" : "https://thumbs.dreamstime.com/b/basic-rgb-220591567.jpg",
+    "Description" : "Lie facedown with your arms outstretched and your palms facing each other.\nSlowly lift one arm a few inches off the floor, keeping it straight without rotating your shoulders and keeping your head and torso still.\nHold the position, then lower your arm back down. Repeat on the other side.\nFor an extra challenge, lift your opposite leg a few inches off the floor at the same time.",
+    "Complexity" : 5,
+    "Benefits" : "Contralateral Limb Raises is a bodyweight exercise that works your deltoids, rear deltoids and side deltoids.\n\nContralateral Limb Raises is a great moderate move. When done correctly, it can effectively target your buttocks, legs, lower body, shoulders and upper body."
+  }
+}
+}

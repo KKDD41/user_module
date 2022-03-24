@@ -1,0 +1,34 @@
+{ "Cardio" :
+{
+  "Plyo Lunges" : {
+    "pictureUrl" : "https://83507-231696-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/02/Jumping-Alternating-Lunges.png",
+    "Description" : "Stand in a split stance, right leg in front and left leg in back.\nBend your knees and lower into a lunge.\nIn an explosive movement, jump into the air and switch your legs, landing so that your left leg is in front and the right leg is in back.\nLand with soft joints, lower into a lunge and repeat, jumping and switching sides.",
+    "Complexity" : 1,
+    "Benefits" : "Plyo lunges are another great plyometric move that will help build power and strength in the lower body.\n\nThis move is also excellent for burning calories, getting the heart rate up, and working the hips, glutes, and thighs. This high-impact, high-intensity exercise is challenging, so stick with static lunges if this move is too much for you."
+  },
+  "Jump Rope" : {
+    "pictureUrl" : "https://i.pinimg.com/originals/05/90/a8/0590a8493c1bd10dfdc4a1a333284d00.png",
+    "Description" : " Start with feet together and arms by sides. Bend at elbows (but keep them close to body) to bring forearms wide and up to hip height. Begin making small circles with both forearms in a forward motion while simultaneously taking quick hops with feet. (If you're using a jump rope, the goal is to revolve the cord around body and clear it under feet with every hop.) ",
+    "Complexity" : 2,
+    "Benefits" : "You can do perform this move with or without an actual jump rope. The form is the same either way."
+  },
+  "Jogging in place" : {
+    "pictureUrl" : "https://joyceagwu.com/wp-content/uploads/2021/01/WO-5.jpg",
+    "Description" : "Begin by marching in place, lifting your knees and swinging your arms.\nMove into a light jog, keeping your feet close to the ground as you get a feel for the exercise.\nAs you warm up, start bringing your heels closer to your glutes each time you jog.\nAdd intensity by pumping your arms overhead, jogging faster, or raising the knees.\nRepeat for 30 seconds to as many minutes as you can. You can also do this exercise in a cardio circuit.",
+    "Complexity" : 3,
+    "Benefits" : "Jogging in place is one of the simplest ways to get your heart rate up if you're stuck inside. It doesn't have the same intensity as jogging outside, since there's no forward motion or wind resistance. But using your arms and adding forward motion by jogging around the house or up and down the stairs can help you sweat a little more."
+  },
+  "Frog Jumps" : {
+    "pictureUrl" : "https://image.shutterstock.com/image-vector/woman-doing-frog-jumps-exercise-260nw-2092188043.jpg",
+    "Description" : "With feet about hip-width apart, squat low enough that you can put your hands on the floor in front of you.\nIn an explosive movement, jump up, using your glutes, quads, and hamstrings to generate power.\nAs you jump, tap your heels together and take the hands behind your head or up in the air.\nLand with bent knees to protect the joints and go back into your squat to prepare for the next jump.\nRepeat 10 to 20 froggy jumps. Rest and repeat if desired.",
+    "Complexity" : 4,
+    "Benefits" : "Froggy jumps are a high-intensity move and a great way to get your heart rate up in a short time. This advanced exercise will build lower body power and cardio endurance while helping you burn more calories."
+  },
+  "Burpee" : {
+    "pictureUrl" : "https://experiencelife.lifetime.life/wp-content/uploads/2021/03/How-to-do-the-perfect-burpee-1280x720.jpg",
+    "Description" : "Stand with feet about hip-width apart and squat to the floor, placing your hands on the floor in front of you.\nIn an explosive movement, jump the feet out behind you so that you're in a push-up position, on your hands and toes with your body in a straight line.\nDo a push-up on your toes or knees (this is optional and adds quite a bit of intensity).\nImmediately jump the feet back to start, stand up, and repeat for 10 to 15 reps or 30 to 60 seconds.",
+    "Complexity" : 5,
+    "Benefits" : "Burpees are an exercise some of us may remember vividly from high school gym\u200B class. This tough exercise is so memorable because it works the entire body and gets the heart rate up in a very short period of time.3\n\nThe move is simple but very challenging on the heart, lungs, and the body. Add it to your regular cardio workouts to boost intensity and to work on your power, agility, and endurance."
+  }
+}
+}

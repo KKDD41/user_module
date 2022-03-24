@@ -1,0 +1,34 @@
+{ "Strength" :
+{
+  "Bulgarian split seat" : {
+    "pictureUrl" : "https://i.pinimg.com/originals/47/b6/24/47b6243a5a566e0759fb94e85b6e5c0e.png",
+    "Description" : "Stand roughly two feet in front of a sturdy bench or chair. Pick up your right foot and place it on the bench behind you. Check to make sure your feet are still roughly hip-distance apart. Engage your core with your chest high and eyes looking straight ahead. Try to keep the load balanced evenly across your left foot. Inhale through this downward phase. Press back to standing by pushing through your left foot. Step your right foot off the bench or chair after completing a full set to one side.",
+    "Complexity" : 1,
+    "Benefits" : "The Bulgarian split squat is an excellent way to take your compound, lower-body training to the next level. Also, by improving your balance with compound, lower-body exercises, your agility and core strength are likely to improve, making it less likely that you'll experience a fall when knocked off balance. "
+  },
+  "Dumbbell lift" : {
+    "pictureUrl" : "https://www.wikihow.com/images/thumb/3/36/Lift-Weights-Safely-Step-8-Version-2.jpg/v4-460px-Lift-Weights-Safely-Step-8-Version-2.jpg",
+    "Description" : "Stand holding a dumbbell in each hand next to your outer thighs. Keep your back straight and slowly lift the weights out to the sides until your arms are parallel with the floor. Your elbows should be slightly bent. Slowly lower the dumbbells back to the starting position.",
+    "Complexity" : 2,
+    "Benefits" : "Lateral raises target the medial (outer) head of the deltoid muscle. “You don’t need an awful lot of core strength to perform the movement, which is why it’s good for beginners."
+  },
+  "Reverse crunches" : {
+    "pictureUrl" : "https://us.123rf.com/450wm/artinspiring/artinspiring1902/artinspiring190200621/117578196-woman-doing-crunches-in-the-gym-belly-burn-workout-girl-make-exercise-abs-workout-healthy-and-active.jpg?ver=6",
+    "Description" : "Strengthens your rectus abdominis. Takes strain off your neck. Less stressful on your back than crunches. Targets other core muscles. Easy to set up.",
+    "Complexity" : 3,
+    "Benefits" : "A reverse crunch offers many of the same benefits as the traditional crunch. However, because your neck and most of your back stays on the ground, it’s thought to be easier on your spine."
+  },
+  "Plank rows" : {
+    "pictureUrl" : "https://i.pinimg.com/originals/85/55/41/855541224cf2ec9893dfbe761b29a1e2.png",
+    "Description" : "While gripping a pair of dumbbells, get into pushup position. Your hands should be just over shoulder-width apart and your feet slightly over hip-width apart.\n\nKeeping your hips parallel to the floor, bend your right elbow to pull the weight up toward the right side of your body. Pause for a moment, then slowly lower the weight back to start position. Repeat on the other side.",
+    "Complexity" : 4,
+    "Benefits" : "This strength exercise is great for building a strong core, glutes, and arms."
+  },
+  "Crunch with knees up" : {
+    "pictureUrl" : "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F35%2F2019%2F08%2F26193249%2Fabs-workout-reverse-crunch.jpg",
+    "Description" : "Lying down on your back, bend the knees at a 90-degree angle. Place the hands behind the head, elbows open wide. Lift the head and neck about 1 inch off of the ground. This is the starting position. Engage the lower abs as you curl up as high as you can and hug the elbows in to try to touch your knees. Lower the head, neck and elbows down to the starting position.",
+    "Complexity" : 5,
+    "Benefits" : "It strengthens the abdominal muscles while developing stability of the pelvic lumbar region. You can also amp things up by increasing the tempo."
+  }
+}
+}

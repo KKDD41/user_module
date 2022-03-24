@@ -1,0 +1,34 @@
+{ "Yoga" :
+{
+  "Downward-Facing Dog" : {
+    "pictureUrl" : "https://pocketyoga.com/assets/images/full/downward_dog.png",
+    "Description" : "From all fours, walk your hands 6 inches in front of you. Tuck your toes and lift your hips up and back to lengthen your spine. If your hamstrings are tight, keep your knees bent in order to bring your weight back into the legs.\n\nSpread your fingers wide, press into your hands, and rotate your arms so that your biceps are facing toward one another. Press your thighs back toward the wall behind you.",
+    "Complexity" : 1,
+    "Benefits" : "This classic pose opens your shoulders, lengthens your spine, and stretches your hamstrings. Since your head is below your heart, the mild inversion creates a calming effect."
+  },
+  "Triangle Pose" : {
+    "pictureUrl" : "https://pocketyoga.com/assets/images/full/triangle_forward_L.png",
+    "Description" : "Stand with feet wide, 3–4 feet apart. Shift your right heel out so your toes are pointing slightly inward. Turn your left foot out 90 degrees. Line up your left heel with the arch of your right foot.\n\nKeeping both legs straight, ground through your feet. Lift arms into a T at shoulder height. Reach forward with your front arm. When you can’t reach anymore, hinge at the front hip.\n\nBring your front arm down to your shin, a foam block, or the ground. Lift your back arm up toward the sky and spread your fingers. Take your gaze down to the floor or up toward your lifted hand.",
+    "Complexity" : 2,
+    "Benefits" : "While this pose can be challenging for those with tight muscles, it will help promote balance, stretch the hamstrings and inner thighs, and create a feeling of expansion in the body."
+  },
+  "Upward-Facing Dog" : {
+    "pictureUrl" : "https://pocketyoga.com/assets/images/full/upward_dog.png",
+    "Description" : "Lie facedown on the floor. Bend elbows and place hands on the mat in line with lower ribs. Hug your elbows in line with your torso. Tuck your toes and take an inhale.\n\nAs you exhale, push the floor away like a push-up. Straighten your arms and broaden across the chest, hovering your hips a few inches above the floor at the same time.",
+    "Complexity" : 3,
+    "Benefits" : "You’ll open up your chest and shoulders, while stretching the abdominals and hip flexors. This pose comes after chaturanga in a classic Sun Salutation."
+  },
+  "Side plank" : {
+    "pictureUrl" : "https://pocketyoga.com/assets/images/full/plank_side_extended_R.png",
+    "Description" : "Start in Downward-Facing Dog. Turn onto the outer edge of your right foot, making sure that your right foot and right hand are in alignment.\n\nStack your left foot on top of your right. Lengthen through the spine through the crown of your head. Once you’re stable, lift your left hand up toward the sky. Press the floor away from you with the bottom hand.",
+    "Complexity" : 4,
+    "Benefits" : "This pose strengthens your shoulders, upper back, and abdominals. It also promotes core and scapular stability, which is helpful if you’re working on inversions or arm balances."
+  },
+  "Shoulder stand" : {
+    "pictureUrl" : "https://post.healthline.com/wp-content/uploads/2021/08/941475-Shoulderstand-The-Queen-of-Yoga-Poses-Shoulderstand-B.png",
+    "Description" : "Neatly stack two blankets with the folded edges aligned with the short edge of your mat. Lay on the blankets and place the tops of your shoulders 2 inches from the edge of the blankets.\n\nRest your head on the floor, off the blanket. Place your arms at your sides. Bend your knees and bring your feet to the floor, heels near butt.\n\nAs you inhale, bring your knees in toward your chest. As you exhale, straighten your legs and send them up toward the sky. Place your hands on your lower back to support your posture, fingertips pointed down toward your tail bone.\n\nTo come out of the pose, bend your knees in toward your chest and slowly lower down onto your back.",
+    "Complexity" : 5,
+    "Benefits" : "Like headstand, this inversion offers numerous benefits to multiple systems in the body. It’s a cooling and energetic way to end your practice."
+  }
+}
+}

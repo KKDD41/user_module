@@ -19,6 +19,7 @@ AppUser:
         - String userName;
         - int weight;
         - int heightM;
+        - String levelOfFitness;
         - CycleNotifier cycleNotifier:
             - int cycleLength;
             - int cycleDay;
@@ -51,10 +52,13 @@ Correct ```infoLine``` must have one of following forms:
 - ```{"userName" : String}```;
 - ```{"weight" : int}```;
 - ```{"heightM" : int}```;
+- ```{"levelOfFitness" : "Low" || "High" || "Medium"}```;
 - ```{"cycleNotifier" : {"cycleDay" : int}}```;
 - ```{"cycleNotifier" : {"cycleLength" : int}}```.
 Other forms or unrealistic params result in a CustomErrorMessage (will be beautiful, but not now).
 ```appUser.updateInfo``` also can be used during session to change existing params if it is necessary.
+
+To get explanation about current cycle phase use method ```String retunDescription()```. 
 
 ### Appropriate workouts' provider:
 
@@ -65,7 +69,10 @@ For each theme there exists method ```Future<List<SingleWorkout>> returnListOfWo
 to access DB and get appropriate exercises.
 
 ### SingleWorkout class:
-SingleWorkout contains fields ```String nameOfWorkout``` and ```String pictureUrl```.
+SingleWorkout contains fields to describe current workout.
+
+![example](resourses/example_2.png)
+
 Maybe later we add more params, so there exists factory method ```SimpleWorkout.fromMap
 (Map<String, dynamic> info)```, where info has the following form:
 - ```{"name_of_workout" : { /* named params such as pictureUrl */}}```.

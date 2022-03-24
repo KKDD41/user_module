@@ -1,0 +1,34 @@
+{ "Stretching" :
+{
+  "Intense side stretch" : {
+    "pictureUrl" : "https://pocketyoga.com/assets/images/full/pyramid_prayer_R.png",
+    "Description" : "Start in Mountain Pose. Step your left foot back and place it flat on the floor at a 45-degree angle. Ground down into both feet and lift up through the thighs.\n\nPlace your hands on your hips. Rotate your torso forward. Hinge at the hips and lengthen your spine over the front leg. Lift away from the floor and broaden across the chest.",
+    "Complexity" : 1,
+    "Benefits" : "The pose helps calm the mind and stretches your spine, shoulders, wrists, hips, and hamstrings."
+  },
+  "Seated Forward Fold" : {
+    "pictureUrl" : "https://pocketyoga.com/assets/images/full/seated_forward_bend.png",
+    "Description" : "Sit and straighten your legs out in front of you, grounding your thighs into the floor. Hinge at the hips to elongate your torso over your thighs. Grab hold of the outer edges of your feet.",
+    "Complexity" : 2,
+    "Benefits" : "This feel-good fold elongates the back of your body, lengthens your spine, and stretches your hamstrings."
+  },
+  "Balasana" : {
+    "pictureUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GPTnfhgbTunmZFDX8otM32dnxhDshxxYBQ&usqp=CAU",
+    "Description" : "Kneel on the floor. Touch your big toes together and sit on your heels, then separate your knees about as wide as your hips.\nExhale and lay your abdomen resting between your inner thighs and rest your forehead on the mat.\nRest your arms by your sides with your palms facing up near your feet.\nStay in the pose from 5 to 10 breaths. To come up, first lengthen the front torso, and then with an inhalation Gently release back.",
+    "Complexity" : 3,
+    "Benefits" : "Balasana also known as child's pose, is a gentle resting pose that stretches the hips, thighs, and legs while calming the mind and relieving stress and tension. Everyone needs a good resting pose and Child pose is an excellent one not just for beginners but for yoga practitioners of all levels."
+  },
+  "Lying Quad Stretch" : {
+    "pictureUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0exSKHhiKHtRtHV1RvZ7cjmje6fLQkPobKg&usqp=CAU",
+    "Description" : "Lie down on your side using your elbow for balance. Using your other arm, slowly pull your foot towards your glutes, keeping both knees together and bent knee pointing down. Squeeze the glutes to get a deeper stretch in the quads.",
+    "Complexity" : 4,
+    "Benefits" : "This side-lying quad stretch is a good stretch when you don’t have a yoga strap on hand. It’s also a challenge for your balance."
+  },
+  "Inner Thigh Stretch" : {
+    "pictureUrl" : "https://www.himalayanyogaashram.com/wp-content/uploads/2020/04/Poorna-Titali-Asana-full-butterfly.jpg",
+    "Description" : "Sit on the floor with your torso straight and tall. Bring the feet together in front of your knees, bent and out to the sides, and grab onto both feet. Keeping the back straight, gently pull forward until you feel a gentle stretch in your inner thighs. Hold for 15–30 seconds.",
+    "Complexity" : 5,
+    "Benefits" : "This exercise helps not only develop the inner thigh muscles, but also, when performed correctly, strengthens the muscles of the lower back."
+  }
+}
+}

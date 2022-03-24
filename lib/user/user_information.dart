@@ -7,6 +7,7 @@ class UserInformation {
   String userName;
   int weight;
   int hightM;
+  String levelOfFitness;
   CycleNotifier cycleNotifier;
 
   /// Constructing user's information for the start of using app.
@@ -15,6 +16,7 @@ class UserInformation {
     required this.weight,
     required this.hightM,
     required this.cycleNotifier,
+    required this.levelOfFitness,
   });
 
   /// Construct an information after query from DB.
@@ -23,13 +25,13 @@ class UserInformation {
         userName: map['userName'],
         weight: map['weight'],
         hightM: map['hightM'],
+        levelOfFitness: map['levelOfFitness'],
         cycleNotifier: CycleNotifier(
           cycleDay: map['cycleNotifier']['cycleDay'],
           cycleLength: map['cycleNotifier']['cycleLength'],
           currentDate:
               CycleNotifier.fromString(map['cycleNotifier']['currentDate']),
-        )
-    );
+        ));
     return userInfo;
   }
 
@@ -77,16 +79,26 @@ class UserInformation {
     });
   }
 
+  Future setLevelOfFitness(String myLevelOfFitness, String userID) async {
+    levelOfFitness = myLevelOfFitness;
+    if (levelOfFitness != 'Low' &&
+        levelOfFitness != 'Medium' &&
+        levelOfFitness != 'High') {
+      CustomErrorMessage('Undefined level of fitness!');
+    }
+    await DatabaseProvider.setInfo(userID, {'levelOfFitness': levelOfFitness});
+  }
+
   @override
   String toString() {
     return '''weight : $weight, \n 
               userName : $userName, \n 
               hightM : $hightM, \n 
+              levelOfFitness : $levelOfFitness, \n
               cycleNotifier : \n 
                   - 'cycleDay' : ${cycleNotifier.cycleDay}, \n 
                   - 'cycleLength' : ${cycleNotifier.cycleLength}, \n 
-                  - 'currentDate' : ${DateFormat('yyyy-MM-dd')
-                                      .format(cycleNotifier.currentDate)}
+                  - 'currentDate' : ${DateFormat('yyyy-MM-dd').format(cycleNotifier.currentDate)}
               ''';
   }
 }

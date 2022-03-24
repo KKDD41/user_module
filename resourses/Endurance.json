@@ -1,0 +1,34 @@
+{ "Endurance" :
+{
+  "Squatting" : {
+    "pictureUrl" : "https://metro.co.uk/wp-content/uploads/2021/10/GettyImages-1284067703.jpg?quality=90&strip=all&zoom=1&resize=644%2C456",
+    "Description" : "Start in a standing position with your feet about shoulder-width apart and your arms down at your sides. Bend your knees and hips to lower your torso toward the ground while keeping your back straight. As you lower your body, lift your arms up in front of you so they are parallel to the ground. Return to a standing position with your arms down.",
+    "Complexity" : 1,
+    "Benefits" : "Squats are another in our group of strength training exercises. Like a plank, you can do variations on a squat, including adding free weights, squatting deeper, or moving slower to engage your muscles.\n\nThese variations can help increase your strength through the exercises."
+  },
+  "Push-ups" : {
+    "pictureUrl" : "https://media.istockphoto.com/vectors/step-to-instruction-in-push-up-vector-id578104104?k=20&m=578104104&s=612x612&w=0&h=kGbvAeYgHEY0W_yb94ol-5M4YVGv8MDxQ5IHAgehKB4=",
+    "Description" : "Contract your abs and tighten your core by pulling your belly button toward your spine. \nInhale as you slowly bend your elbows and lower yourself to the floor, until your elbows are at a 90-degree angle.\nExhale while contracting your chest muscles and pushing back up through your hands, returning to the start position. ",
+    "Complexity" : 2,
+    "Benefits" : "The abdominal muscles used to hold the body rigid during the push-up are the rectus abdominis and the internal and external obliques.2 As the push-up involves multiple joints, it is a compound exercise.\n\nThe upper body muscles that come into play in the push-up are the deltoids of the shoulders, the pectoral muscles of the chest, the triceps and biceps of the upper arm, the gluteal or hip muscles, and the erector spinae of the back."
+  },
+  "Jumping from a squat" : {
+    "pictureUrl" : "https://t3.ftcdn.net/jpg/04/35/78/68/360_F_435786899_v92ZMhvgR3OEu9EHCDihkGGSI6dUPWYB.jpg",
+    "Description" : "Stand with feet shoulder width and knees slightly bent.\nBend your knees and descend to a full squat position.\nEngage through the quads, glutes, and hamstrings and propel the body up and off the floor, extending through the legs. With the legs fully extended, the feet will be a few inches (or more) off the floor.\nDescend and control your landing by going through your foot (toes, ball, arches, heel) and descend into the squat again for another explosive jump.\nUpon landing immediately repeat the next jump.",
+    "Complexity" : 3,
+    "Benefits" : "This exercise uses your lower body muscles as well as your core: abdominals, glutes, hamstrings, and lower back. The squat jump exercise ranks near the top of the list for developing explosive power using only an athlete's body weight. "
+  },
+  "Bicycle crunch" : {
+    "pictureUrl" : "https://media1.popsugar-assets.com/files/thumbor/B2ugJ2LgwL39VomL2oauNtPz3pQ/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-:fill-!white!-/2016/12/16/640/n/1922729/1f8b623f8d7f01f9_bicycle-crunch/i/Core-Work-Bicycle-Crunch.jpg",
+    "Description" : "Lie on your back on the floor (or, preferably, on a mat for some support). Press your lower back into the floor and bend knees while keeping feet flat on the floor.\nPlace hands behind head, interlacing fingers if preferred. Keep elbows wide and gently cradle your head in your hands.\nBring your knees up, with shins parallel to the floor, as you lift shoulder blades off the floor. (Be careful not to strain or pull on your neck.)\nAs you straighten left leg out at about a 45-degree angle, turn your upper body to the right, bringing left elbow toward right knee. (Make sure the movement comes from your rib cage, not just your elbows.)\nReturn to center, with both knees bent and elbows wide.\nRepeat on the other side: Straighten right leg to a 45-degree angle and turn your upper body to the left, bringing right elbow toward left knee.",
+    "Complexity" : 4,
+    "Benefits" : "Strengthen your core muscles and you’ll notice improved endurance (ideal for workouts or just busy days running errands), better posture, reduced back pain, and reduced risk of injury."
+  },
+  "Plank" : {
+    "pictureUrl" : "https://media.istockphoto.com/vectors/woman-doing-plank-exercise-on-blue-mat-with-stopclock-symbol-over-her-vector-id1204463032?k=20&m=1204463032&s=170667a&w=0&h=XOyVxipkqSd1ey99XCOKJZcZbk8NWHwy6S0tOkmtTNA=",
+    "Description" : "Begin in the plank position, face down with your forearms and toes on the floor. Your elbows are directly under your shoulders and your forearms are facing forward. Your head is relaxed and you should be looking at the floor.\nEngage your abdominal muscles, drawing your navel toward your spine. Keep your torso straight and rigid and your body in a straight line from your ears to your toes with no sagging or bending. This is the neutral spine position. Ensure your shoulders are down, not creeping up toward your ears. Your heels should be over the balls of your feet.",
+    "Complexity" : 5,
+    "Benefits" : "Strengthening the core is an important aspect of any workout regimen. A strong and solid core looks and feels good. But more importantly, it helps to stabilize, balance, and power the body during just about every other activity."
+  }
+}
+}
